@@ -3,4 +3,7 @@ class Pin < ActiveRecord::Base
 
 #see rails validations
   validates :description, presence: true
+
+ 	belongs_to :user
+ 	validates :user_id, presence: true
 end
